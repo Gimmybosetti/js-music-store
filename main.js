@@ -12,7 +12,7 @@ function displayAlbum() {
                 createImg(album[i], i);
                 createCardBody(i);
                 createtitle(album[i], i);
-                createh5(album[i], i);
+                createAuthor(album[i], i);
                 createYear(album[i], i);
                 createhr(i);
                 createGenre(album[i], i);
@@ -62,7 +62,7 @@ function createhr (i){
     document.getElementById(id).appendChild(hr);
 }
 
-function createh5 (album, i){
+function createAuthor (album, i){
     const h5 = document.createElement('h5');
     h5.className = 'card-text d-inline';
     h5.innerHTML = album.author;
