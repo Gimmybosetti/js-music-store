@@ -8,9 +8,6 @@ function displayAlbum() {
             const album = value.data.response;
             console.log(album);
             for(let i = 0; i < album.length; i++){
-                console.log(album[i].author, album[i].genre, album[i].title, album[i].year,);
-                console.log(album[i].poster);
-                
                 createCard(i);
                 createImg(album[i], i);
                 createCardBody(i);
@@ -88,20 +85,3 @@ function createGenre(album, i){
     const id = 'cardBody' + i.toString();
     document.getElementById(id).appendChild(h6);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
